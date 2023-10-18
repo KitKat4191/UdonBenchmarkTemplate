@@ -36,7 +36,7 @@ namespace KitKat.UdonBenchmark.Runtime.Abstract
             LogResults();
         }
 
-        public virtual void BenchA() 
+        public virtual void BenchA()
         {
             _stopwatchBenchA.Start();
 
@@ -44,7 +44,7 @@ namespace KitKat.UdonBenchmark.Runtime.Abstract
 
             _stopwatchBenchA.Stop();
         }
-        public virtual void BenchB() 
+        public virtual void BenchB()
         {
             _stopwatchBenchB.Start();
 
