@@ -19,6 +19,11 @@ namespace KitKat.UdonBenchmark.Runtime.Abstract
         protected System.Diagnostics.Stopwatch _stopwatchBenchB = new System.Diagnostics.Stopwatch();
         protected System.Diagnostics.Stopwatch _stopwatchBenchA = new System.Diagnostics.Stopwatch();
 
+        [ContextMenu("Run Benchmark")]
+        public virtual void RunFromEditor()
+        {
+            SendCustomEvent(nameof(RunBenchmark));
+        }
 
         public virtual void RunBenchmark()
         {
